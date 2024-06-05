@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Trends</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        pre {
+            background-color: #f5f5f5;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+            word-wrap: break-word;
+            border: 1px solid #ddd;
+        }
+        .json-key {
+            color: #0366d6;
+        }
+        .json-value {
+            color: #032f62;
+        }
+        .json-string {
+            color: #cb3837;
+        }
+    </style>
+</head>
+<body>
+
+    <p>Actually, Proxymesh is not working properly, so I had to use the FreeProxy library. Additionally, I cannot deploy the entire app for free. Kindly watch the video—it’s just 3 minutes long. In the video, I walk through how my app fetches top trends from X platform in real time. You can also schedule a meeting, and I’ll guide you through it live.”
+    </p>
+
+    <p>Video Link:</p>
+    <a href="https://youtu.be/gZsWOormEnQ">Real time webscrapping of top trends from X platform</a>
+
+
+
+    
+    <h1>Top Trends</h1>
+    <ul>
+        {% for trend in trends %}
+            <li>{{ trend }}</li>
+        {% endfor %}
+    </ul>
+    <p>The IP address used for this query was: {{ ip }}</p>
+    
+    <h2>Here’s a JSON extract of this record from the MongoDB:</h2>
+
+    <pre>
+        {{data}}</pre>
+
+
+</body>
+</html>
