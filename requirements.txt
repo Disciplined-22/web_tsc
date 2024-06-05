@@ -1,2 +1,4 @@
 Flask==3.0.0
 Werkzeug==3.0.1
+pymongo==4.0.1
+pandas==1.4.0
