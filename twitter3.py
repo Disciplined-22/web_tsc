@@ -25,7 +25,7 @@ def fetch_data():
         except FileNotFoundError:
             return None
 
-    connection_string = "mongodb+srv://@.t9kkmra.mongodb.net/?retryWrites=true&w=majority"
+    connection_string = "mongodb" 
 
     def save_trends_to_mongo(trends, ip_address, db_name='web_s', collection_name='web_s'):
         client = MongoClient(connection_string)  # Use the provided connection string
