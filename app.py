@@ -13,7 +13,7 @@ import os
 
 app = Flask(__name__)
 
-client = MongoClient('mongodb+srv://booklib:BQIITKSGYJ1sTexA@booklib.t9kkmra.mongodb.net/booklib?retryWrites=true&w=majority ')  # Replace with your MongoDB connection string
+client = MongoClient('')  # Replace with your MongoDB connection string
 
 
 
